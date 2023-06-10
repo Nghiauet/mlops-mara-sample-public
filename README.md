@@ -9,7 +9,7 @@ This repository is the sample solution for MLOps Marathon 2023.
     ```bash
     # Install python 3.9
     # Install docker version 20.10.17
-    # Install docker-compose version v2.6.1
+    # Install docker compose version v2.6.1
     pip install -r requirements.txt
     make mlflow_up
     ```

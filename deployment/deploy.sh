@@ -26,7 +26,7 @@ run_predictor() {
     docker build -f deployment/model_predictor/Dockerfile -t $IMAGE_NAME:$IMAGE_TAG .
     IMAGE_NAME=$IMAGE_NAME IMAGE_TAG=$IMAGE_TAG \
         MODEL_CONFIG_PATH=$model_config_path PORT=$port \
-        docker-compose -f deployment/model_predictor/docker-compose.yml up -d
+        docker compose -f deployment/model_predictor/docker-compose.yml up -d
 }
 
 shift
